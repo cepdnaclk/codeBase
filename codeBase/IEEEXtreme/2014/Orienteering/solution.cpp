@@ -33,6 +33,7 @@ int main() {
         for (int i = 0; i < n; i++)
             for (int j = 0; j < m; j++)
                 dist[i][j] = 1e9;
+        // Using a set instead of a priority queue is so efficient than using a priority queue
         set<pair<double, pair<int, int>>> q;
         int ux = cp[point].first, uy = cp[point].second;
         dist[ux][uy] = 0;
